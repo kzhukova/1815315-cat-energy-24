@@ -42,6 +42,7 @@
           <p class="questionary__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form__fieldset">
+              <legend class="form__title visually-hidden">Данные кота</legend>
               <p class="form__question">
                 <label for="name">Имя:*</label>
                 <input class="form__input-text" type="text" id="name" name="name" placeholder="Барсик" required>
@@ -56,6 +57,7 @@
               </p>
             </fieldset>
             <fieldset class="form__fieldset">
+              <legend class="form__title visually-hidden">Программы питания</legend>
               <ul>
                 <li class="form__question">
                   <input class="form__input-radio" type="radio" name="option" value="loss" id="weight-loss" checked>
