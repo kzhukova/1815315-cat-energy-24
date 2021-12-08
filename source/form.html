@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
@@ -58,7 +60,7 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__title visually-hidden">Программы питания</legend>
-              <ul>
+              <ul class="form__list form__programs">
                 <li class="form__question">
                   <input class="form__input-radio" type="radio" name="option" value="loss" id="weight-loss" checked>
                   <label for="weight-loss">Похудение</label>
@@ -90,7 +92,7 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__title">Дополнительно</legend>
-              <ul>
+              <ul class="form__list form__additional">
                 <li class="form__question">
                   <input class="form__input-checkbox" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
                   <label for="sugar-substitute">Сахарозаменитель</label>
@@ -115,7 +117,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts contacts-secondary">
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
@@ -129,7 +131,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">Cat Energy</div>
+        <a class="page-footer__logo logo" href="index.html"></a><span class="visually-hidden">Cat Energy</span></a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

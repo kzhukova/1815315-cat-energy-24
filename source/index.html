@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -39,10 +41,10 @@
       <section class="programs">
         <div class="programs__wrapper">
           <header class="programs__header">
-            <h2 class="programs__title">Функциональное питание для котов</h2>
+            <h2 class="programs__main-title">Функциональное питание для котов</h2>
             <p class="programs__slogan">Занялся собой? Займись котом!</p>
             <image class="programs__product-image" src="img/index-can-mobile.svg" width="280" height="270" alt="Банка Cat Energy Pro со вкусом курицы">
-            <a class="programs__choice" href="form.html">Подобрать программу</a>
+            <a class="programs__choice button" href="form.html">Подобрать программу</a>
           </header>
           <ul class="programs__list">
             <li class="programs__item programs__item--slim">
@@ -82,7 +84,7 @@
       <section class="proof">
         <div class="proof__wrapper">
           <h2 class="proof__title">Живой пример</h2>
-          <p class="proof__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <p class="proof__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="proof__list">
             <div class="proof__item">
               <dt class="proof__number">5 кг</dt>
@@ -99,7 +101,7 @@
           </div>
           <div class="proof__slider">
             <img class="proof__cat-image" src="img/cat-before-mobile.jpg" width="280" height="232" alt="Фотография упитанного кота до похудения">
-            <img class="proof__cat-image" src="img/cat-after-mobile.jpg" width="243" height="232" alt="Фотография стройного кота после похудения">
+            <img class="proof__cat-image visually-hidden" src="img/cat-after-mobile.jpg" width="243" height="232" alt="Фотография стройного кота после похудения">
             <div class="proof__toggles slider">
               <label>
                 <input class="slider__toggle slider__toggle--current" type="radio" name="before-and-after" value="before" checked>
@@ -129,7 +131,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">Cat Energy</div>
+        <a class="page-footer__logo logo" href="#"></a><span class="visually-hidden">Cat Energy</span></a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">

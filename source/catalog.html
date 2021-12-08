@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-nav">
@@ -161,7 +163,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__more" href="#">Показать еще 100500 товаров</a>
-              <p class="catalog__more-description">На самом деле вкусов гораздо больше!</p>
+              <p class="catalog__more-description catalog__details">На самом деле вкусов гораздо больше!</p>
               <a class="catalog__show-all button" href="#">Показать все</a>
             </li>
           </ul>
@@ -218,8 +220,8 @@
         <p class="promotion__text">Закажите все и получите чехол для кота в подарок!</p>
       </section>
 
-      <section class="contacts">
-        <div class="contacts__wrapper">
+      <section class="contacts contacts-secondary">
+        <div class="contacts__wrapper contacts__wrapper-secondary">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__text">
@@ -232,7 +234,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo logo">Cat Energy</div>
+        <a class="page-footer__logo logo" href="index.html"></a><span class="visually-hidden">Cat Energy</span></a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
