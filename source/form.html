@@ -77,14 +77,16 @@
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__title">Контактные данные (владельца кота)</legend>
-              <p class="form__question">
-                <label for="email">E-mail:*</label>
-                <input class="form__input-text" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-              </p>
-              <p class="form__question">
-                <label for="tel">Телефон:*</label>
-                <input class="form__input-text" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-              </p>
+              <div class="form__contacts">
+                <p class="form__question">
+                  <label for="email">E-mail:*</label>
+                  <input class="form__input-text" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                </p>
+                <p class="form__question">
+                  <label for="tel">Телефон:*</label>
+                  <input class="form__input-text" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                </p>
+              </div>
             </fieldset>
             <fieldset class="form__fieldset">
               <legend class="form__title">Комментарий</legend>
@@ -111,8 +113,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="form__button button" type="submit" >Отправить заявку</button>
-            <p class="form__required-data">* — Обязательные поля</p>
+            <div class="form__submit">
+              <button class="form__button button" type="submit" >Отправить заявку</button>
+              <p class="form__required-data">* — Обязательные поля</p>
+          </div>
           </form>
         </div>
       </section>

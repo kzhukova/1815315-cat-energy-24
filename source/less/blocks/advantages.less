@@ -9,15 +9,15 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: @tablet-width) {
+  .tablet({
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+    grid-template-columns: repeat(2, 1fr);
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop({
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+    grid-template-columns: repeat(4, 1fr);
+  });
 }
 
 .advantages__description {

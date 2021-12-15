@@ -1,3 +1,10 @@
+.complementary__wrapper {
+  .desktop({
+    display: grid;
+    grid-template-columns: auto 245px;
+  });
+}
+
 .complementary__main-title {
   font-size: 24px;
   line-height: 24px;
@@ -12,6 +19,16 @@
 
 .complementary__item {
   border-bottom: 1px solid @gray-205;
+
+  .tablet({
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+  });
+
+  .desktop({
+    display: grid;
+    grid-template-columns: 1fr 1fr 244px;
+  });
 }
 
 .complementary__item:first-child {
@@ -23,6 +40,11 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+
+  .tablet({
+    grid-column: 1/2;
+    grid-row: 1/2;
+  });
 }
 
 .complementary__title a {
@@ -34,4 +56,36 @@
   line-height: 14px;
   font-weight: 400;
   color: @dark-gray-68;
+
+  .tablet({
+    grid-column: 2/3;
+    grid-row: 1/2;
+  });
+}
+
+.complementary__button {
+  .tablet({
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  });
+
+  .desktop({
+    grid-column: 3/4;
+  });
+}
+
+.complementary__promotion {
+  background-image: url("../img/promo-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: @brand-color;
+}
+
+.complementary__promotion-text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: @basic-white;
+  text-align: center;
 }

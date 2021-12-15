@@ -3,10 +3,10 @@
 }
 
 .proof__wrapper {
-  @media (min-width: @desktop-width) {
+  .desktop({
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+    grid-template-columns: repeat(2, 1fr);
+  });
 }
 
 .proof__title {
