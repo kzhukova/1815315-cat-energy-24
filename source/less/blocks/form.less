@@ -2,6 +2,30 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @dark-gray-68;
+
+  .desktop({
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  });
+}
+
+.form__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset:nth-child(2) {
+  border-bottom: 1px solid @gray-217;
+  border-top: 1px solid @gray-217;
+}
+
+.form__fieldset:nth-child(3),
+.form__fieldset:nth-child(4),
+.form__fieldset:nth-child(5) {
+  .desktop({
+    grid-column: 1/-1;
+  });
 }
 
 .form__title {
@@ -21,8 +45,25 @@
   color: @dark-gray-34;
 }
 
+.form__contacts {
+  .desktop({
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  });
+}
+
 .form__additional {
   color: @basic-black;
+
+  .tablet({
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  });
+
+  .desktop({
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  });
 }
 
 .form__required-data {
@@ -53,13 +94,13 @@
   color: @dark-gray-68;
 }
 
-.form__fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+.form__submit {
+  .tablet({
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  });
 
-.form__fieldset:nth-child(2) {
-  border-bottom: 1px solid @gray-217;
-  border-top: 1px solid @gray-217;
+  .desktop({
+    grid-column: 1/-1;
+  });
 }

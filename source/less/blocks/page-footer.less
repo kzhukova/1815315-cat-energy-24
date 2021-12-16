@@ -3,14 +3,14 @@
 }
 
 .page-footer__wrapper {
-  @media (min-width: @tablet-width) {
+  .tablet({
     display: flex;
     justify-content: space-between;
     width: 708px;
     margin: 0 auto;
-  }
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop({
     width: 1220px;
-  }
+  });
 }
