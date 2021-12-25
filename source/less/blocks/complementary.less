@@ -2,6 +2,7 @@
   .desktop({
     display: grid;
     grid-template-columns: auto 245px;
+    column-gap: 80px;
   });
 }
 
@@ -22,7 +23,7 @@
 
   .tablet({
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
   });
 
   .desktop({
@@ -42,7 +43,6 @@
   text-transform: uppercase;
 
   .tablet({
-    grid-column: 1/2;
     grid-row: 1/2;
   });
 }
@@ -58,7 +58,6 @@
   color: @dark-gray-68;
 
   .tablet({
-    grid-column: 2/3;
     grid-row: 1/2;
   });
 }
@@ -71,6 +70,7 @@
 
   .desktop({
     grid-column: 3/4;
+    grid-row: 1/2;
   });
 }
 

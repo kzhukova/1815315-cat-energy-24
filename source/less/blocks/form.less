@@ -49,6 +49,7 @@
   .desktop({
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   });
 }
 
@@ -97,10 +98,12 @@
 .form__submit {
   .tablet({
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
   });
 
   .desktop({
     grid-column: 1/-1;
+    column-gap: 80px;
   });
 }
