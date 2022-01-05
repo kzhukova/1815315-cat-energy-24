@@ -12,7 +12,21 @@
   });
 
   .desktop({
+    position: relative;
     margin: 0;
+  });
+}
+
+.programs__header::before {
+  .desktop({
+    content: "";
+    position: absolute;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+    width: 1044px;
+    height: 696px;
   });
 }
 
@@ -31,9 +45,17 @@
 
   .desktop({
     min-height: 696px;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: top right;
+    background: linear-gradient(to left, #62a53b 50%, @basic-white 50%);
+  });
+}
+
+.programs__header-wrapper {
+  .desktop({
+    position: relative;
+    max-width: 1440px;
+    width: 84%;
+    margin: 0 auto;
+    min-height: 696px;
   });
 }
 
@@ -56,7 +78,7 @@
   });
 
   .desktop({
-    padding-left: 190px;
+    padding-left: 80px;
     padding-top: 223px
   });
 }
@@ -77,7 +99,7 @@
   });
 
   .desktop({
-    padding-left: 190px;
+    padding-left: 80px;
   });
 }
 
@@ -116,7 +138,7 @@
 
   .desktop({
     position: static;
-    margin-left: 190px;
+    margin-left: 80px;
     margin-top: 52px;
   });
 }
@@ -138,10 +160,11 @@
 
   .desktop({
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 82px;
     grid-gap: 80px;
-    margin-right: 110px;
-    margin-left: 110px;
+    max-width: 1440px;
+    width: 84%;
+    margin: 0 auto;
+    margin-top: 82px;
   });
 }
 
@@ -179,6 +202,7 @@
   background-image: url("../img/programs-loss-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: contain;
   width: 50px;
   height: 53px;
   left: 22px;
@@ -187,11 +211,13 @@
   .tablet({
     width: 200px;
     height: 211px;
-    left: 493px;
+    left: 446px;
     top: 0;
   });
 
   .desktop({
+    width: 100px;
+    height: 106px;
     left: 52px;
     top: -36px;
   });
@@ -203,19 +229,22 @@
   background-image: url("../img/programs-gain-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: contain;
   width: 67px;
   height: 50px;
   left: 13px;
   top: -8px;
 
   .tablet({
-    width: 200px;
-    height: 211px;
-    left: 493px;
+    width: 268px;
+    height: 200px;
+    left: 412px;
     top: 0;
   });
 
   .desktop({
+    width: 134px;
+    height: 100px;
     left: 33px;
     top: -30px;
   });
