@@ -200,24 +200,42 @@
 }
 
 .proof__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  display: block;
   margin: 0;
   padding: 0;
   margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 
   .tablet({
     font-size: 20px;
     line-height: 30px;
     margin-top: 25px;
+    width: 566px;
   });
 }
 
 .proof__toggles label {
+  align-self: center;
   .tablet({
-    border-bottom: 1px dotted  fade(@basic-black, 24%);
+    border-bottom: 1px dotted fade(@basic-black, 24%);
+  });
+}
+
+.proof__toggles label:hover {
+  .tablet({
+    border-bottom: 1px solid fade(@basic-black, 40%);
+  });
+}
+
+.proof__toggles label:active {
+  .tablet({
+    border-bottom: none;
   });
 }

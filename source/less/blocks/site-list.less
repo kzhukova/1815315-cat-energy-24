@@ -9,7 +9,7 @@
   });
 
   .desktop({
-    margin-right: 110px;
+    margin-right: 0;
   });
 }
 
@@ -93,4 +93,25 @@
   .desktop({
     color: @basic-white;
   });
+}
+
+.site-list__item {
+  .desktop({
+    &--active-secondary {
+
+      &::after {
+        background: @brand-color;
+      }
+    }
+  });
+}
+
+.site-list__item--catalog a[href] {
+  .desktop({
+    color: @basic-black;
+  });
+}
+
+.site-list__catalog a {
+  color: @basic-black;
 }

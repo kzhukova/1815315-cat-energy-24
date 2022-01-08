@@ -21,12 +21,15 @@
   .desktop({
     content: "";
     position: absolute;
+    display: block;
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     top: 0;
     left: 50%;
-    width: 1044px;
+    width: calc(100%/2);
+    background-size: 1044px auto;
     height: 696px;
+    background-color: #62a53b;
   });
 }
 
@@ -41,11 +44,6 @@
     position: relative;
     background: @basic-white;
     text-align: left;
-  });
-
-  .desktop({
-    min-height: 696px;
-    background: linear-gradient(to left, #62a53b 50%, @basic-white 50%);
   });
 }
 
@@ -112,7 +110,8 @@
   .desktop({
     position: absolute;
     top: 141px;
-    left: 558px;
+    left: 50%;
+    transform: translate(-50%, 0);
   });
 }
 
@@ -128,7 +127,7 @@
 
   .tablet({
     position: absolute;
-    top: 292px;
+    top: 232px;
     left: 91px;
     margin: 0;
     font-size: 20px;

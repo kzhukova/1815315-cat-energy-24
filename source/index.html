@@ -112,12 +112,15 @@
             <img class="proof__cat-image visually-hidden" src="img/cat-after-mobile.jpg" width="243" height="232" alt="Фотография стройного кота после похудения">
             <div class="proof__toggles slider">
               <label>
-                <input class="slider__toggle slider__toggle--current visually-hidden" type="radio" name="before-and-after" value="before" checked>
+                <input class="visually-hidden" type="radio" name="before-and-after" value="before" checked>
                 Было
               </label>
-              <input class="slider__range" type="range">
+              <div class="slider__range-controls">
+                <div class="slider__scale"></div>
+                <div class="slider__toggle"></div>
+              </div>
               <label>
-                <input class="slider__toggle visually-hidden" type="radio" name="before-and-after" value="after">
+                <input class="visually-hidden" type="radio" name="before-and-after" value="after">
                 Стало
               </label>
             </div>
