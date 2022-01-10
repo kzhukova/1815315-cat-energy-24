@@ -10,14 +10,19 @@
   });
 }
 
+.contacts__wrapper-catalog {
+  background-color: @light-gray-242;
+}
+
 .contacts__wrapper div{
   display: flex;
   justify-content: space-between;
-  margin: 26px 20px;
+  margin: 0;
+  padding: 26px 20px;
   background-color: @basic-white;
 
   .tablet({
-    margin: 56px 70px;
+    padding: 56px 70px;
   });
 
   .desktop({
@@ -28,6 +33,14 @@
     margin: 0;
     padding: 56px 80px;
   });
+}
+
+.contacts__wrapper-catalog div {
+  background-color: @light-gray-242;
+
+  .desktop({
+    background-color: @basic-white;
+  })
 }
 
 .contacts__invitation {

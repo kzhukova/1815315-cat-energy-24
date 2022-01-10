@@ -4,4 +4,15 @@
   text-transform: uppercase;
   color: @basic-white;
   background-color: @brand-color;
+
+  .tablet({
+    &:hover {
+      background-color: @grass-green;
+    }
+    &:active {
+      background-color: @grass-green;
+      color: fade(@basic-white, 30%);
+    }
+  });
 }
+

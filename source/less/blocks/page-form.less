@@ -1,5 +1,41 @@
+.page-form__title-wrapper {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  .tablet({
+    margin-left: 30px;
+    margin-right: 30px;
+  });
+
+  .desktop({
+    max-width: 1440px;
+    width: 84%;
+    margin: 0 auto;
+  });
+}
+
 .page-form__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 37px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  .tablet({
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 64px;
+    padding-bottom: 54px;
+    padding-left: 39px;
+  });
+
+  .desktop({
+    padding-top: 74px;
+    padding-bottom: 56px;
+    padding-left: 0;
+  });
 }
