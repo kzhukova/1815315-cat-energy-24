@@ -70,6 +70,13 @@
         background: @basic-white;
       }
     }
+
+    &--active-secondary {
+
+      &::after {
+        background: @brand-color;
+      }
+    }
   });
 }
 
@@ -92,17 +99,6 @@
 
   .desktop({
     color: @basic-white;
-  });
-}
-
-.site-list__item {
-  .desktop({
-    &--active-secondary {
-
-      &::after {
-        background: @brand-color;
-      }
-    }
   });
 }
 
