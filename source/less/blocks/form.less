@@ -26,7 +26,7 @@
   padding: 0;
 }
 
-.form__fieldset:nth-child(2) {
+.form__layout .form__fieldset:nth-child(2) {
   border-bottom: 1px solid @gray-217;
   border-top: 1px solid @gray-217;
 
@@ -375,6 +375,9 @@
   min-height: 150px;
   border: 1px solid @light-gray-231;
   resize: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
   .tablet({
     min-height: 174px;
