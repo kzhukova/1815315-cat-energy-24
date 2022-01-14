@@ -2,4 +2,26 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 130px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.social__link--vkontakte:hover path {
+  fill: @brand-color;
+}
+
+.social__link--instagram:hover path {
+  fill: @brand-color;
+}
+
+.social__link--facebook:hover path {
+  stroke: @brand-color;
+}
+
+.social__link:active {
+  opacity: 0.3;
 }

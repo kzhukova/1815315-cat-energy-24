@@ -1,9 +1,60 @@
+.programs {
+  .desktop({
+    margin-top: -174px;
+    position: relative;
+    z-index: 1;
+  });
+}
+
+.programs__wrapper {
+  .tablet({
+    margin: 0 30px;
+  });
+
+  .desktop({
+    position: relative;
+    margin: 0;
+  });
+}
+
+.programs__header::before {
+  .desktop({
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+    width: calc(100%/2);
+    background-size: 1044px auto;
+    height: 696px;
+    background-color: #62a53b;
+  });
+}
+
 .programs__header {
-  background-image: url("../img/index-background.jpg");
+  background: url("../img/index-background.jpg"), linear-gradient(to bottom, #64a73d 303px, @basic-white 303px);
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;
   margin: 0;
+
+  .tablet({
+    position: relative;
+    background: @basic-white;
+    text-align: left;
+  });
+}
+
+.programs__header-wrapper {
+  .desktop({
+    position: relative;
+    max-width: 1440px;
+    width: 84%;
+    margin: 0 auto;
+    min-height: 696px;
+  });
 }
 
 .programs__main-title {
@@ -12,6 +63,22 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
+  padding: 0;
+  padding-top: 27px;
+
+  .tablet({
+    color: @basic-black;
+    padding: 0;
+    padding-left: 87px;
+    margin-top: 62px;
+    font-size: 60px;
+    line-height: 60px;
+  });
+
+  .desktop({
+    padding-left: 80px;
+    padding-top: 223px
+  });
 }
 
 .programs__slogan {
@@ -19,46 +86,253 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 25px;
+
+  .tablet({
+    color: @basic-black;
+    padding-left: 87px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 41px;
+  });
+
+  .desktop({
+    padding-left: 80px;
+  });
+}
+
+.programs__product-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
+
+  .desktop({
+    position: absolute;
+    top: 141px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  });
 }
 
 .programs__choice {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 7px 73px;
+
+  .tablet({
+    position: absolute;
+    top: 232px;
+    left: 91px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  });
+
+  .desktop({
+    position: static;
+    margin-left: 80px;
+    margin-top: 52px;
+  });
 }
 
 .programs__list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin-top: 43px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  display: grid;
+  grid-gap: 20px;
+
+  .tablet({
+    margin: 0;
+    grid-gap: 30px;
+  });
 
   .desktop({
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    max-width: 1440px;
+    width: 84%;
+    margin: 0 auto;
+    margin-top: 82px;
   });
 }
 
 .programs__item {
   background-color: @light-gray-242;
+  margin: 0;
 }
 
 .programs__title {
+  position: relative;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  padding-left: 91px;
+
+  .tablet({
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 77px;
+    padding-left: 53px;
+  });
+
+  .desktop({
+    padding-left: 214px;
+  });
+}
+
+.programs__item--slim h3::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/programs-loss-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 50px;
+  height: 53px;
+  left: 22px;
+  top: -8px;
+
+  .tablet({
+    width: 200px;
+    height: 211px;
+    left: 446px;
+    top: 0;
+  });
+
+  .desktop({
+    width: 100px;
+    height: 106px;
+    left: 52px;
+    top: -36px;
+  });
+}
+
+.programs__item--pro h3::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/programs-gain-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 67px;
+  height: 50px;
+  left: 13px;
+  top: -8px;
+
+  .tablet({
+    width: 268px;
+    height: 200px;
+    left: 412px;
+    top: 0;
+  });
+
+  .desktop({
+    width: 134px;
+    height: 100px;
+    left: 33px;
+    top: -30px;
+  });
 }
 
 .programs__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   color: @dark-gray-68;
-  border-bottom: 1px solid @gray-217;
+  border-bottom: 2px solid @gray-217;
+  margin: 0;
+  padding: 0;
+  margin-top: 29px;
+  margin-left: 20px;
+  margin-right: 33px;
+  padding-bottom: 23px;
+
+  .tablet({
+    border: none;
+    margin: 0;
+    color: @basic-black;
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin-top: 24px;
+    padding-left: 52px;
+    padding-bottom: 0;
+  });
+
+  .desktop({
+    margin-top: 73px;
+  });
 }
 
 .programs__view-product {
+  position: relative;
+  display: inline-block;
   color: @basic-black;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
+  padding-left: 20px;
+  padding-top: 19px;
+  padding-bottom: 22px;
+
+  .tablet({
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    margin-top: 48px;
+    margin-left: 52px;
+    margin-bottom: 53px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 57px;
+  });
+
+  .desktop({
+    margin-top: 23px;
+  });
 }
+
+.programs__view-product::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 32px;
+  height: 12px;
+  left: 120px;
+  top: 21px;
+
+  .tablet({
+    left: 133px;
+    top: 10px;
+  });
+}
+
+.tablet({
+  .programs__view-product:hover::after {
+    background-image: url("../img/icon-arrow-hover-active.svg");
+  }
+
+  .programs__view-product:active::after {
+    background-image: url("../img/icon-arrow-hover-active.svg");
+  }
+
+  .programs__view-product:active {
+    opacity: 0.3;
+  }
+});
