@@ -18,6 +18,26 @@
 }
 
 .programs__header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/index-background-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 302px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: @brand-color;
+  z-index: -1;
+
+  .tablet({
+    background-image: none;
+    height: 0;
+    width: 0;
+  });
+
   .desktop({
     content: "";
     position: absolute;
@@ -27,16 +47,16 @@
     top: 0;
     left: 50%;
     width: calc(100%/2);
-    background-size: 1044px auto;
+    background-size: cover;
+    background-position: center left;
     height: 696px;
-    background-color: #62a53b;
+    background-color: @brand-color;
+    z-index: 0;
   });
 }
 
 .programs__header {
-  background: url("../img/index-background.jpg"), linear-gradient(to bottom, #64a73d 303px, @basic-white 303px);
-  background-position: top center;
-  background-repeat: no-repeat;
+  position: relative;
   text-align: center;
   margin: 0;
 

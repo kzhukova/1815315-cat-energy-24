@@ -645,3 +645,21 @@
     font-size: 16px;
   });
 }
+
+/* Error */
+
+.form__input-error {
+  border: 2px solid @error-color;
+}
+
+.form__input-error + .form__icon--email path {
+  stroke: @error-color;
+}
+
+.form__input-error + .form__icon--email line {
+  stroke: @error-color;
+}
+
+.form__input-error + .form__icon--phone path {
+  fill: @error-color;
+}
