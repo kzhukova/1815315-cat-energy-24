@@ -6,7 +6,7 @@
   });
 
   .desktop({
-    background: linear-gradient(to bottom, @basic-white 205px, @light-gray-234 205px);
+    background: linear-gradient(to top, @light-gray-234 462px, @basic-white 462px);
   });
 }
 
@@ -31,7 +31,7 @@
     max-width: 1440px;
     width: 84%;
     margin: 0 auto;
-    margin-top: 69px;
+    margin-top: 0;
     margin-bottom: 65px;
   });
 }
@@ -45,6 +45,10 @@
   .tablet({
     font-size: 60px;
     line-height: 60px;
+  });
+
+  .desktop({
+    margin-top: 69px;
   });
 }
 
@@ -195,6 +199,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  .tablet({
+    width: 592px;
+    height: 511px;
+  });
 }
 
 .proof__toggles {

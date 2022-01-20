@@ -32,6 +32,10 @@
   background-color: @brand-color;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   .tablet({
     background-image: none;
     height: 0;
@@ -52,6 +56,10 @@
     height: 696px;
     background-color: @brand-color;
     z-index: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   });
 }
 
@@ -97,7 +105,7 @@
 
   .desktop({
     padding-left: 80px;
-    padding-top: 223px
+    padding-top: 223px;
   });
 }
 
@@ -127,11 +135,19 @@
   margin-right: auto;
   margin-top: 29px;
 
+  .tablet({
+    width: 709px;
+    height: 609px;
+  });
+
   .desktop({
     position: absolute;
-    top: 141px;
+    top: 111px;
+    margin-left: 115px;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 552px;
+    height: 499px;
   });
 }
 
