@@ -151,13 +151,26 @@
 
   .tablet({
     position: absolute;
-    bottom: 100% + 34px;
+    top: -234px;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 168px;
+    height: 200px;
   });
 
   .desktop({
-    bottom: 100% + 46px;
+    top: -244px;
+  });
+}
+
+.catalog__product-image img {
+  .tablet({
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    width: 168px;
+    height: 200px;
   });
 }
 
