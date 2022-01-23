@@ -18,3 +18,17 @@
   fill: @brand-color;
   opacity: 0.3;
 }
+
+.copyright__logo--visible-mobile {
+  .tablet({
+    display: none;
+  });
+}
+
+.copyright__logo--visible-tablet {
+  display: none;
+
+  .tablet({
+    display: block;
+  });
+}

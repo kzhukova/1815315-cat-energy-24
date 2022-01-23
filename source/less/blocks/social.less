@@ -5,21 +5,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   width: 130px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.social__link--vkontakte:hover path {
-  fill: @brand-color;
+.social__link-icon--vk {
+  fill: @gray-102;
+
+  &:hover {
+    fill: @brand-color;
+  }
+
+  .tablet({
+    width: 30px;
+    height: 22px;
+  });
 }
 
-.social__link--instagram:hover path {
-  fill: @brand-color;
+.social__link-icon--insta {
+  fill: @gray-102;
+
+  &:hover {
+    fill: @brand-color;
+  }
+
+  .tablet({
+    width: 23px;
+    height: 23px;
+  });
 }
 
-.social__link--facebook:hover path {
-  stroke: @brand-color;
+.social__link-icon--fb {
+  fill: none;
+  stroke: @gray-102;
+
+  &:hover {
+    stroke: @brand-color;
+  }
+
+  .tablet({
+    width: 28px;
+    height: 33px;
+  });
 }
 
 .social__link:active {
