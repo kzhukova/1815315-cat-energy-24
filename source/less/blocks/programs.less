@@ -1,6 +1,6 @@
 .programs {
   .desktop({
-    margin-top: -174px;
+    margin-top: -176px;
     position: relative;
     z-index: 1;
   });
@@ -13,6 +13,22 @@
 
   .desktop({
     position: relative;
+    margin: 0;
+  });
+}
+
+.programs__header {
+  position: relative;
+  text-align: center;
+  margin: 0;
+
+  .tablet({
+    position: relative;
+    background: @basic-white;
+    text-align: left;
+  });
+
+  .desktop({
     margin: 0;
   });
 }
@@ -53,7 +69,7 @@
     width: calc(100%/2);
     background-size: cover;
     background-position: center left;
-    height: 696px;
+    height: 694px;
     background-color: @brand-color;
     z-index: 0;
 
@@ -63,25 +79,13 @@
   });
 }
 
-.programs__header {
-  position: relative;
-  text-align: center;
-  margin: 0;
-
-  .tablet({
-    position: relative;
-    background: @basic-white;
-    text-align: left;
-  });
-}
-
 .programs__header-wrapper {
   .desktop({
     position: relative;
     max-width: 1440px;
-    width: 84%;
+    width: 85%;
     margin: 0 auto;
-    min-height: 696px;
+    min-height: 695px;
   });
 }
 
@@ -98,14 +102,14 @@
     color: @basic-black;
     padding: 0;
     padding-left: 87px;
-    margin-top: 62px;
+    margin-top: 64px;
     font-size: 60px;
     line-height: 60px;
   });
 
   .desktop({
-    padding-left: 80px;
-    padding-top: 223px;
+    padding-left: 82px;
+    padding-top: 222px;
   });
 }
 
@@ -118,14 +122,14 @@
 
   .tablet({
     color: @basic-black;
-    padding-left: 87px;
+    padding-left: 89px;
     font-size: 20px;
     line-height: 20px;
     margin-top: 41px;
   });
 
   .desktop({
-    padding-left: 80px;
+    padding-left: 82px;
   });
 }
 
@@ -136,14 +140,15 @@
   margin-top: 29px;
 
   .tablet({
+    margin-top: 20px;
     width: 709px;
     height: 609px;
   });
 
   .desktop({
     position: absolute;
-    top: 111px;
-    margin-left: 115px;
+    top: 121px;
+    margin-left: 114px;
     left: 50%;
     transform: translate(-50%, 0);
     width: 552px;
@@ -159,21 +164,22 @@
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 7px 73px;
+  margin-top: 3px;
+  padding: 11px 73px;
 
   .tablet({
     position: absolute;
-    top: 232px;
+    top: 230px;
     left: 91px;
     margin: 0;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 26px;
   });
 
   .desktop({
     position: static;
-    margin-left: 80px;
+    margin-left: 82px;
     margin-top: 52px;
   });
 }
@@ -181,7 +187,7 @@
 .programs__list {
   list-style: none;
   padding: 0;
-  margin-top: 43px;
+  margin-top: 20px;
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 0;
@@ -197,7 +203,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
     max-width: 1440px;
-    width: 84%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 82px;
   });
@@ -228,6 +234,7 @@
 
   .desktop({
     padding-left: 214px;
+    margin-top: 75px;
   });
 }
 
@@ -241,13 +248,13 @@
   width: 50px;
   height: 53px;
   left: 22px;
-  top: -8px;
+  top: -9px;
 
   .tablet({
     width: 200px;
     height: 211px;
     left: 446px;
-    top: 0;
+    top: 3px;
   });
 
   .desktop({
@@ -268,13 +275,13 @@
   width: 67px;
   height: 50px;
   left: 13px;
-  top: -8px;
+  top: -6px;
 
   .tablet({
     width: 268px;
     height: 200px;
-    left: 412px;
-    top: 0;
+    left: 411px;
+    top: 13px;
   });
 
   .desktop({
@@ -294,8 +301,8 @@
   padding: 0;
   margin-top: 29px;
   margin-left: 20px;
-  margin-right: 33px;
-  padding-bottom: 23px;
+  margin-right: 20px;
+  padding-bottom: 22px;
 
   .tablet({
     border: none;
@@ -304,13 +311,15 @@
     font-size: 16px;
     line-height: 24px;
     width: 340px;
-    margin-top: 24px;
+    margin-top: 25px;
     padding-left: 52px;
     padding-bottom: 0;
   });
 
   .desktop({
-    margin-top: 73px;
+    margin-top: 75px;
+    width: 467px;
+    padding-left: 54px;
   });
 }
 
@@ -322,23 +331,25 @@
   font-size: 16px;
   line-height: 16px;
   padding-left: 20px;
-  padding-top: 19px;
+  padding-top: 18px;
   padding-bottom: 22px;
 
   .tablet({
     font-size: 20px;
     line-height: 20px;
     padding: 0;
-    margin-top: 48px;
+    margin-top: 52px;
     margin-left: 52px;
-    margin-bottom: 53px;
+    margin-bottom: 58px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 57px;
   });
 
   .desktop({
-    margin-top: 23px;
+    margin-top: 27px;
+    margin-left: 54px;
+    margin-bottom: 60px;
   });
 }
 
@@ -351,11 +362,11 @@
   width: 32px;
   height: 12px;
   left: 120px;
-  top: 21px;
+  top: 19px;
 
   .tablet({
-    left: 133px;
-    top: 10px;
+    left: 132px;
+    top: 8px;
   });
 }
 
