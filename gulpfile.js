@@ -11,6 +11,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import cheerio from 'gulp-cheerio';
 import browser from 'browser-sync';
 
 // Styles
@@ -77,7 +78,18 @@ const svg = () =>
 
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
-    .pipe(svgo())
+    .pipe(svgo({
+      plugins: [{
+        removeViewBox: false
+      }]
+    }))
+    .pipe(cheerio({
+      run: ($) => {
+          $('[fill]').removeAttr('fill');
+          $('[stroke]').removeAttr('stroke');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
