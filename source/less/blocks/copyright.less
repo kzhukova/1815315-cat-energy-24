@@ -1,3 +1,10 @@
+.copyright {
+  .tablet({
+    width: 163px;
+    overflow: hidden;
+  });
+}
+
 .copyright__link {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -19,16 +26,8 @@
   opacity: 0.3;
 }
 
-.copyright__logo--visible-mobile {
+.copyright__logo path:nth-child(2) {
   .tablet({
-    display: none;
-  });
-}
-
-.copyright__logo--visible-tablet {
-  display: none;
-
-  .tablet({
-    display: block;
+    transform: translateX(-118px);
   });
 }
